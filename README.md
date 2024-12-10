@@ -43,7 +43,6 @@ To get started with the project, follow these steps:
 ### Prerequisites
 
 Before setting up the project, ensure you have the following installed:
-- [SpringBoot] (Java 17)
 - [Docker](https://www.docker.com/get-started)
 
 ### Installation
