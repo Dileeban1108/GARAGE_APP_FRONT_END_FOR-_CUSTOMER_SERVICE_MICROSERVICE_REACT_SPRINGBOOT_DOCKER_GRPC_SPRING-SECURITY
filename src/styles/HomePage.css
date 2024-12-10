@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #00aeff;
+}
+
+.nav-link {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  color: #0080ff;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  height: 40px;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: #0080ff;
+}
+
+/* Ensure navbar items are on opposite ends */
+.navbar-nav {
+  margin-left: auto; /* Align navigation links to the right */
+}
+
+.ml-auto {
+  margin-left: auto;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("../assets/img1.jpg") no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.mainDev{
+  background: url("../assets/img1.jpg") no-repeat;
+  padding: 1rem;
+}
+.hero-text {
+  color: #0044ff;
+  width: 83%;
+  height: 60%;
+  background-color: #f8f9faa1;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: #0080ff;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+  margin: 8px;
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0080ff;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #0080ff;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subservices {
+  background-color: #0080ff;
+  border-radius: 5px;
+  color: #f8f9fa;
+  padding: 30px;
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  color: #f8f9fa;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0080ff;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Mobile-Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subservices {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}
+.backButtons{
+  display: flex;
+  justify-content: space-between;
+}
+.phone-input .PhoneInputCountry {
+  font-size: 20px; /* Resize the country flag */
+  margin-right: 10px; /* Adjust the gap between flag and input field */
+  border-radius: 5px;
+}
+
+.phone-input .PhoneInputInput {
+  font-size: 16px; /* Adjust the text size */
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.phone-input {
+  width: 100%;
+
+}

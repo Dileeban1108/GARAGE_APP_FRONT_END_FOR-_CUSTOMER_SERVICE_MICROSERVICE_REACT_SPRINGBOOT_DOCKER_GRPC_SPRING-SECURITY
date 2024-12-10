@@ -1,0 +1,106 @@
+/* General container styling */
+.user-history-page {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  min-height: 100vh;
+}
+
+/* Title styling */
+.history-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 30px;
+}
+
+/* Loading container styles */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.loading-container p {
+  margin-left: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: #495057;
+}
+
+/* Table row hover effect */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Empty state when no bookings are found */
+td[colspan="3"] {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Error message styling */
+.alert {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Make sure the page is responsive */
+@media (max-width: 768px) {
+  .history-title {
+    font-size: 1.6rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  td, th {
+    padding: 8px;
+  }
+
+  .loading-container p {
+    font-size: 1rem;
+  }
+}
+/* UserHistoryPage.css */
+@media (max-width: 576px) {
+  .modal-content {
+    width: 90%; /* Make modal smaller on small screens */
+  }
+
+  .table th,
+  .table td {
+    font-size: 12px; /* Reduce font size for mobile */
+  }
+
+  .btn {
+    padding: 5px 10px; /* Make buttons smaller on mobile */
+  }
+}

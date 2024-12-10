@@ -1,0 +1,160 @@
+.profile-page {
+  background-color: #f8f9fa;
+  height: 90vh;
+  width: 100%;
+  margin-top: 60px;
+  padding: 40px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-image-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden;
+  border: 2px solid #ccc; /* Optional: Add border around the image */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area of the circular container */
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 1px; /* Position the camera icon near the bottom */
+  right: 15px;  /* Position the camera icon near the right edge */
+  color: rgb(0, 119, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: #f8f9fa;
+  height: 30px;
+  width: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.camera-icon:hover {
+  color: rgb(0, 17, 255);
+}
+
+.profile-update-form {
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: white;
+}
+
+.profile-update-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-update-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.profile-update-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.profile-update-form input,
+.profile-update-form select {
+  padding: 5px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-update-form button {
+  padding: 10px;
+  background-color: #008cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-update-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error-message::before {
+  content: "⚠️ ";
+}
+
+.profieRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+/* Modal background */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-actions {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-actions button {
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+background-color: #008cff;
+color: #ffffff;
+border-radius: 5px;
+}
+
+.modal-actions button:hover {
+  background-color: #f1f1f1;
+  color: #008cff;
+}

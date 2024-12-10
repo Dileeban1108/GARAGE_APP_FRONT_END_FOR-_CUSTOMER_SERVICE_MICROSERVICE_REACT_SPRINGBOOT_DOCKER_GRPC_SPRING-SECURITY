@@ -1,0 +1,238 @@
+
+
+
+p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.serviceHome{
+  background-color: #f8f9fa;
+  height: 100vh;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Text that gives feedback when no services are available */
+.services-list p {
+  color: #dc3545;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+/* Styling the date picker */
+.react-datepicker-wrapper {
+  width: 100%;
+  display: inline-block;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.react-datepicker__input-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+/* Services List Layout */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Service Card Styles */
+.service-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+.service-card h5 {
+  background-color: #757474;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+}
+.service-card p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+/* Modal Styling */
+.modal-dialog {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-header h5 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.modal-body {
+  font-size: 1rem;
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+li:hover {
+  background-color: #e2e6ea;
+}
+
+button[disabled] {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Booking in progress */
+.modal-footer {
+  text-align: center;
+}
+/* Spinner Styling for Loading */
+.spinner-border {
+  margin-right: 10px;
+  border-width: 2px;
+  color: #007bff;
+}
+/* Ensure responsiveness for smaller screens */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .modal-dialog {
+    margin: 20px;
+  }
+}
+/* Custom Modal Overlay */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Custom Modal Content */
+.custom-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-modal-header h3 {
+  margin: 0;
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.custom-modal-body select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.custom-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn,
+.confirm-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.confirm-btn {
+  background-color: #0084ff;
+  color: white;
+}
+.cancel-btn:hover{
+  background-color: #e41b2f;
+}
